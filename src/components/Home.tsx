@@ -1,7 +1,6 @@
 import {
     Card,
     CardContent,
-    CardDescription,
     CardFooter,
     CardHeader,
     CardTitle,
@@ -10,13 +9,13 @@ import {
 
 <Card>
     <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
+        <CardTitle>user name</CardTitle>
     </CardHeader>
     <CardContent>
-        <p>Card Content</p>
+        <p>email</p>
+        <p>company</p>
     </CardContent>
     <CardFooter>
-        <p>Card Footer</p>
+        <p>link</p>
     </CardFooter>
 </Card>

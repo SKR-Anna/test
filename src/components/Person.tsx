@@ -10,13 +10,16 @@ import {
 
 <Card>
     <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
+        <CardTitle>full name</CardTitle>
+        <CardDescription>username</CardDescription>
     </CardHeader>
     <CardContent>
-        <p>Card Content</p>
+        <p>email</p>
+        <p>webside</p>
+        <p>company</p>
     </CardContent>
     <CardFooter>
-        <p>Card Footer</p>
+        <p>adress</p>
+        <p>phone</p>
     </CardFooter>
 </Card>
