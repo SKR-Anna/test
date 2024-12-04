@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 
 const fetchData = async () => {
-  const response = await fetch('', {
+  const response = await fetch('https://jsonplaceholder.typicode.com', {
     cache: 'force-cache',
     next: {
       revalidate: 3600 // 1 hour
