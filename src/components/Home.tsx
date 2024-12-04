@@ -19,3 +19,5 @@ import {
         <p>link</p>
     </CardFooter>
 </Card>
+
+export default <Card/>;
