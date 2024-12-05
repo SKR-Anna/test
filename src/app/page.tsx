@@ -1,4 +1,4 @@
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import { User } from "../types/types";
 import UserCard from "@/components/Home";
 
@@ -16,7 +16,7 @@ const Page = ({ users}: Props) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const fetchData: GetStaticProps = async () => {
   try{
     const response = await fetch('https://jsonplaceholder.typicode.com/users', {
       next: {
