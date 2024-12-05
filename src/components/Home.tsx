@@ -15,16 +15,16 @@ interface Props {
 
 const UserCard: React.FC<Props> = ({ user }) => {
     return (
-    <Card>
-    <CardHeader>
-        <CardTitle>{user.name}</CardTitle>
+    <Card className="shadow-lg rounded-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+    <CardHeader className="bg-blue-500 text-white text-center p-4">
+        <CardTitle className="text-xl font-bold">{user.name}</CardTitle>
     </CardHeader>
-    <CardContent>
-        <p>{user.email}</p>
-        <p>{user.company.name}</p>
+    <CardContent className="p-4">
+        <p className="text-gray-700">{user.email}</p>
+        <p className="text-gray-600">{user.company.name}</p>
     </CardContent>
-    <CardFooter>
-        <Link href={`/user/${user.id}`}> переход на карточку person
+    <CardFooter className="bg-gray-100 p-4 text-center">
+        <Link href={`/user/${user.id}`} className="text-blue-500 hover:underline"> переход на карточку person
         </Link>
     </CardFooter>
 </Card>
