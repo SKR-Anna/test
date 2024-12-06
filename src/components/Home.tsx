@@ -24,13 +24,11 @@ const UserCard: React.FC<Props> = ({ user }) => {
         <p className="text-gray-600">{user.company.name}</p>
     </CardContent>
     <CardFooter className="bg-gray-100 p-4 text-center">
-        <Link href={`/user/${user.id}`} className="text-blue-500 hover:underline"> переход на карточку person
+        <Link href={`/users/${user.id}`} className="text-blue-500 hover:underline"> переход на карточку person
         </Link>
     </CardFooter>
 </Card>
     )
 }
-
-
 
 export default UserCard;

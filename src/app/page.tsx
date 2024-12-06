@@ -1,6 +1,6 @@
 
-import { User } from "../types/types";
 import UserCard from "@/components/Home";
+import { User } from "../types/types";
 
 const fetchData = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/users', {
